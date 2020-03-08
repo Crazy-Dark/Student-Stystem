@@ -1,0 +1,175 @@
+/* 加载预定义样式 */
+@import "reset.css";
+
+
+/* 头部log的样式 ----------------------------------------------*/
+header.log {
+    height: 70px;
+    line-height: 70px;
+    background-color: #354457;
+    padding-left: 20px;
+}
+
+header.log img {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+header.log span {
+    font-size: 14px;
+    color: #b3bcc5;
+}
+
+/* 左边的导航栏------------------------------------------- */
+.menu {
+    width: 200px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #b3bcc5;
+    height: calc(100% - 70px);
+    background-color: #4d5e70;
+}
+
+.menu dl dt {
+    margin-left: 8px;
+}
+
+.menu dl dd {
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.menu dl dd:hover {
+    color: #354457;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu dl dd.active {
+    background-color: #ddd;
+    color: #354457;
+}
+
+/* 右边的内容区 ----------------------------------------------*/
+.content {
+    width: calc(100% - 200px);
+    height: calc(100% - 70px);
+    background-color: #eee;
+}
+
+.content>div {
+    display: none;
+}
+
+.content div.content-active {
+    display: block;
+}
+
+/* 学生列表的样式----------- */
+#student-list table {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#student-list table thead {
+    background-color: #e3e8ee;
+    color: #646987;
+}
+
+#student-list table tbody {
+    background-color: #fff;
+}
+
+#student-list table tbody .btn {
+    padding: 3px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#student-list table tbody .edit {
+    background-color: #5cb85c;
+}
+
+#student-list table tbody .delete {
+    background-color: #d9534f;
+}
+
+#student-list #turn-page {
+    padding: 10px;
+    text-align: center;
+}
+
+#student-list #turn-page button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#student-list #turn-page span {
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+/* 新增学生的表单样式----------- */
+form {
+    width: 350px;
+    margin: auto;
+}
+
+#add-form {
+    margin: 100px auto;
+}
+
+form div {
+    margin: 10px;
+}
+
+form label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+form .sex label:nth-of-type(n+2) {
+    width: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+form .btm input {
+    padding: 5px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* 点击编辑按钮后的样式 */
+.modal {
+    display: none;
+}
+
+.modal .mask {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal .content {
+    position: fixed;
+    width: 400px;
+    height: 450px;
+    left: calc(50% - 250px);
+    top: calc(50% - 225px);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.modal .content h3 {
+    padding: 30px 40px 16px 40px;
+}
